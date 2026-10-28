@@ -20,7 +20,7 @@ module mac(
     if (!rst_n) begin
       out <= 0;
     end else if (enable) begin
-      out <= d_product;
+      out <= out + d_product;
     end
   end
   
